@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            auto-shower
+        </title>
+    </head>
+    ,<body>
+        
+        <input class='input'
+         placeholder ="Type something" onkeyup="displayText();">
+
+        <p class="displayPara"></p>
+
+    </body>
+    <script>
+        function displayText () {
+
+            const inputElement = document.querySelector('.input');
+
+            let text = inputElement.value;
+
+            document.querySelector('.displayPara').innerHTML = text;
+        }
+    </script>
+</html>

@@ -1,0 +1,104 @@
+body {
+    background-color: #7b7b7b;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subscribebutton {
+
+    color: white;
+    background-color: red;
+    border: none;
+    height: 34px;
+    width: 105px;
+    font-weight: 400;
+    font-family: Arial;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.16s;
+    margin: 20px 20px 20px 20px;
+}
+
+.subscribebutton:hover {
+    opacity: 0.7;
+}
+
+.subscribebutton:active {
+    opacity: 0.4;
+}
+
+#joinbutton {
+    color: #007bff;
+    background-color: white;
+    border: solid 2px;
+    height: 36px;
+    width: 66px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.16s, color 0.18s;
+    margin: 20px 20px 20px 20px;
+}
+
+#joinbutton:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#joinbutton:active {
+    opacity: 0.76;
+}
+
+.tweetbutton {
+    color: white;
+    background-color: rgb(2, 158, 255);
+    height: 38px;
+    width: 70px;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    margin: 20px 20px 20px 20px;
+}
+
+.tweetbutton:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.15);
+}
+
+#ultimatebutton {
+    color: white;
+    background-color: rgb(2, 158, 255);
+    padding: 10px 10px 10px 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.16s;
+}
+
+#ultimatebutton:hover {
+    padding: 10px 30px 10px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.startbutton{
+    color: midnightblue;
+    background-color: yellow;
+    font-family: monospace;
+    height: 45px;
+    width: 100px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.17s;
+    box-shadow: -4px 4px 0px rgb(255, 255, 255, 20);
+    cursor: pointer;
+
+}
+.startbutton:hover{
+    box-shadow: -8px 8px 0px rgb(255, 255, 255, 20);
+}

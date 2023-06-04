@@ -1,0 +1,113 @@
+.accordion {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #f5f5f500;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-header span {
+    flex-grow: 1;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.phrase {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.start-button {
+    display: block;
+    width: 130px;
+    height: 50px;
+    margin: 0 auto;
+    color: white;
+    background-color: rgba(0, 149, 255, 0);
+    border: none;
+    border-radius: 7px 7px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.start-button:active {
+    opacity: 0.8;
+}
+
+.mainDiv {
+    border-radius: 15px 15px 0px 0px;
+    width: 545px;
+    margin-left: 625px;
+    height: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.questionDiv {
+    border-radius: 0px 0px 15px 15px;
+    width: 540px;
+    margin-left: 625px;
+    height: 150px;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 149, 255, 0.794);
+    display: flex;
+    padding-left: 5px;
+}
+
+.displayParaForCountdown {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.displayParaForQuestions {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-top: 50px;
+    transition: ease-in-out 0.3s;
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 545px;
+    border-radius: 15px 15px 0px 0px;
+}

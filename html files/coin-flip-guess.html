@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            coin, flip, game
+        </title>
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <button onclick="
+            computerMove ();
+            resultConfiguration('heads');
+        ">
+            Heads
+        </button>
+
+        <button onclick="
+            computerMove ();
+            resultConfiguration('tails');
+        ">
+            Tails
+        </button>
+
+        <button onclick="
+            score.wins= 0;
+            score.losses= 0;
+            localStorage.removeItem('score');
+            alert('Score was reset');
+        ">
+            Reset score
+        </button>
+    </body>
+
+    <script>
+
+        let score = JSON.parse(localStorage.getItem('score')) || {
+            wins: 0,
+            losses:0,
+        }
+
+        let points = 0;
+        let AI ='';
+
+        function computerMove () {
+
+            const random = Math.random();
+
+            if (random >= 0 && random < 1/2) {
+                AI = 'Heads';
+            } else if (random >= 0 && random < 2/2) {
+                AI = 'Tails';
+            }
+        }
+
+        let answer ='';
+
+        function resultConfiguration(myMove) {
+            if (myMove === 'heads') {
+
+                    if (AI === 'Heads') {
+                    answer = 'You win. +10 Points.'
+                    points += 10;
+                    score.wins += 1;
+                } else if(AI === 'Tails') {
+                    answer = 'You lose. -10 Points.'
+                    points -= 10;
+                    score.losses += 1;
+                }
+            } else if (myMove === 'tails') {
+
+                    if (AI === 'Tails') {
+                    answer = 'You win. +10 Points.'
+                    points += 10;
+                    score.wins += 1;
+                } else if(AI === 'Heads') {
+                    answer = 'You lose. -10 Points.'
+                    points -= 10;
+                    score.losses += 1;
+                }
+            }
+
+            localStorage.setItem('score' , JSON.stringify(score));
+
+            alert(`You guessed ${myMove}. The answer was ${AI}. ${answer} \n Wins= ${score.wins}, Losses= ${score.losses}, Points= ${points}`);
+        }
+        
+    </script>
+</html>

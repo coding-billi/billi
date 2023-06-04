@@ -1,0 +1,48 @@
+    body {
+        font-family: Arial;
+    }
+
+    p {
+        font-family: Arial;
+        font-weight: 300;
+        font-size: larger;
+    }
+
+    .input {
+        font-family: Arial;
+        height: 28px;
+        width: 200px;
+    }
+
+    .addButton {
+        color: white;
+        background-color: green;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .dateInput {
+        width: 143px;
+        height: 30px;
+    }
+
+    .deleteButton {
+        color: white;
+        background-color: maroon;
+        border: none;
+        padding: 9px 30px 9px 30px;
+        cursor: pointer;
+    }
+
+    .displayDiv,
+    .normalDiv {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 200px 140px 100px;
+        column-gap: 12px;
+        row-gap: 10px;
+        align-items: center;
+    }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>
+            buttons
+        </title>
+
+        <link href="/css%20files/buttons.css" rel='stylesheet'>
+    </head>
+
+        <body>
+
+        <button onclick="sub ();" 
+        class ="subscribebutton">
+            SUBSCRIBE
+        </button>
+
+        <button id='joinbutton'>
+            JOIN
+        </button>
+
+        <button class='tweetbutton'>
+            Tweet
+        </button>
+
+        <button id='ultimatebutton'>
+            Ultimate button
+        </button>
+
+        <button class="startbutton">
+            Start
+        </button>
+
+        <button class="startbutton2" onclick="startLoadFinish ()">
+            Start
+        </button>
+
+        </body>
+
+        <script>
+            const subVariable = document.querySelector('.subscribebutton');
+
+            function sub () {
+                
+                if (subVariable.innerText === 'SUBSCRIBE') {
+                   subVariable.innerText = 'SUBSCRIBED';
+                } else {
+                    subVariable.innerText = 'SUBSCRIBE';
+                }
+            }
+
+            const startVar = document.querySelector('.startbutton2');
+
+            function startLoadFinish () {
+
+                if (startVar.innerText === 'Start') {
+                    startVar.innerText = 'loading...';
+                } else {
+                    startVar.innerText = 'Start';
+                }
+
+                setTimeout(() => {
+
+                    if (startVar.innerText === 'loading...') {
+                        startVar.innerText = 'Finished!'
+                    }
+                }, 1000);
+            }
+
+        </script>
+    </html>
