@@ -1,0 +1,66 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fizz Buzz</title>
+    </head>
+    <body>
+        <input class="input" type="number" required>
+        <button class="go-button" onclick="getValueFromInput();">Go</button>
+        <button class="btn">hi</button>
+        <div id="container">
+
+        </div>
+    </body>
+    <script>
+        const input = document.querySelector('input');
+
+        function getValueFromInput() {
+            let inputValue = Number(input.value);
+
+            for (let i = 1; i <= inputValue; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    console.log('FizzBuzz');
+                } else if (!(i % 3)) {
+                    console.log('Fizz');
+                } else if (!(i % 5)) {
+                    console.log('Buzz');
+                } else {
+                   console.log(i);
+               }
+            }
+        }
+
+        const container = document.querySelector('#container');
+
+        const content = document.createElement('div');
+        content.classList.add('content');
+        container.appendChild(content);
+
+        const p = document.createElement('p');
+        p.innerText = 'Hey i am red';
+        p.style.cssText = 'color: red;';
+        content.appendChild(p);
+
+        const h3 = document.createElement('h3');
+        h3.innerText = 'hey i am a blue h3';
+        h3.style.cssText = 'color: blue;';
+        content.appendChild(h3);
+
+        const div = document.createElement('div');
+        container.appendChild(div);
+        div.classList.add('div');
+
+        div.style.cssText = 'border: solid  3px black; background-color: pink;';
+
+        const h1 = document.createElement('h1');
+        h1.textContent = 'i am in a div';
+        div.appendChild(h1);
+
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click', (e) => {
+            e.target.style.background = 'yellow';
+        });
+    </script>
+</html>
