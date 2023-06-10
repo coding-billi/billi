@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+  font-family: Roboto, Arial;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 231px;
+  border-right: solid 1px rgb(45, 45, 45);
+  color: rgb(224, 241, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 20px 13px;
+}
+
+.insta-logo {
+  height: 72px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  margin-top: auto;
+  padding: 10px 0px 0px 0px;
+}
+
+.brand {
+  padding: 18px 0px 0px 0px;
+}
+
+.home-icon {
+  height: 22px;
+}
+
+.search-icon {
+  height: 22px;
+}
+
+.explore-icon {
+  height: 22px;
+}
+
+.reels-icon {
+  height: 22px;
+}
+
+.messages-icon {
+  height: 22px;
+}
+
+.notifications-icon {
+  height: 22px;
+}
+
+.create-icon {
+  height: 22px;
+}
+
+.profile-icon {
+  height: 24px;
+  border-radius: 12px;
+}
+
+.more-icon {
+  height: 24px;
+}
+
+.items {
+  display: flex;
+  padding: 12px 0px 12px 12px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin: 4px 12px 4px 0px;
+  border-radius: 8px;
+}
+
+.items:hover {
+  background-color: #ffffff1a;
+}
+
+.items:hover img {
+  transform: scale(1.07);
+}
+
+.items:active {
+  opacity: 0.5;
+}
+
+.items:active img {
+  transform: scale(0.97);
+}
+
+.items div {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.items1 {
+  display: flex;
+  padding: 12px 0px 12px 12px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin: 4px 12px 4px 0px;
+  border-radius: 8px;
+}
+
+.items1:hover {
+  background-color: #ffffff1a;
+}
+
+.items1:hover img {
+  transform: scale(1.05);
+}
+
+.items1:active {
+  opacity: 0.5;
+}
+
+.items1:active img {
+  transform: scale(0.97);
+}
+
+.items1 div {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
