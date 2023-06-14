@@ -1,6 +1,8 @@
 body {
   background-color: black;
   font-family: Roboto, Arial;
+  margin: 0;
+  display: flex;
 }
 
 .navbar {
@@ -12,7 +14,7 @@ body {
   border-right: solid 1px rgb(45, 45, 45);
   color: rgb(224, 241, 255);
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding: 20px 0px 20px 13px;
 }
 
@@ -67,7 +69,7 @@ body {
   height: 22px;
 }
 
-.profile-icon {
+.my-profile-icon {
   height: 24px;
   border-radius: 12px;
 }
@@ -102,11 +104,11 @@ body {
   transform: scale(0.97);
 }
 
-.items div {
+.items label {
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-  align-items: center;
+  vertical-align: middle;
   margin-left: 16px;
 }
 
@@ -136,11 +138,11 @@ body {
   transform: scale(0.97);
 }
 
-.items1 div {
+.items1 label {
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-  align-items: center;
+  vertical-align: middle;
   margin-left: 16px;
 }
 
@@ -148,4 +150,99 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.main {
+  margin-left: 245px;
+  flex-grow: 1;
+  color: rgb(250, 250, 250);
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post {
+  margin: auto;
+  border: solid 1px red;
+  margin-top: 10px;
+  width: 470px;
+  height: 708px;
+}
+
+.top-section-post {
+  border: solid 1px yellow;
+  height: 56px;
+  align-items: center;
+  display: flex;
+}
+
+.profile-pic1 {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.verified-icon {
+  height: 11px;
+  margin-left: 4px;
+}
+
+.time-post {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.time-post::before {
+  content: "\00B7";
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+.profile-info-div {
+  padding: 0 3px 0 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+  border: solid 1px green;
+}
+
+.profile-name {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 0;
+}
+
+.profile-pic-div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 3px 0 3px;
+  border: solid 1px plum;
+}
+
+.further-info {
+  margin: 0 0 0 0;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 12px
+}
+
+.options-icon {
+  height: 15px;
+}
+
+.options-div {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  border: solid 1px white;
 }
