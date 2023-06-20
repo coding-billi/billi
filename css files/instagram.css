@@ -2,7 +2,6 @@ body {
   background-color: black;
   font-family: Roboto, Arial;
   margin: 0;
-  display: flex;
 }
 
 .navbar {
@@ -153,24 +152,24 @@ body {
 }
 
 .main {
-  margin-left: 245px;
-  flex-grow: 1;
+  
+  display: flex;
   color: rgb(250, 250, 250);
   font-family: Roboto, Arial;
   font-size: 14px;
   font-weight: 600;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 245px;
 }
 
 .post {
-  margin: auto;
-  border: solid 1px red;
   margin-top: 10px;
   width: 470px;
-  height: 708px;
+  height: auto;
 }
 
 .top-section-post {
-  border: solid 1px yellow;
   height: 56px;
   align-items: center;
   display: flex;
@@ -209,14 +208,13 @@ body {
   justify-content: center;
   height: 100%;
   flex-grow: 1;
-  border: solid 1px green;
 }
 
 .profile-name {
   font-weight: 600;
   display: flex;
   align-items: center;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .profile-pic-div {
@@ -224,11 +222,10 @@ body {
   height: 100%;
   align-items: center;
   padding: 0 3px 0 3px;
-  border: solid 1px plum;
 }
 
 .further-info {
-  margin: 0 0 0 0;
+  margin: 0;
   font-weight: 400;
   color: rgb(255, 255, 255);
   font-size: 12px
@@ -244,5 +241,218 @@ body {
   margin: 0;
   align-items: center;
   padding: 0 5px 0 5px;
-  border: solid 1px white;
+}
+
+.middle-section-post {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-post {
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px rgb(38, 38, 38);
+}
+
+.buttons-div {
+  display: flex;
+}
+
+.left-buttons {
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.right-buttons {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.heart-icon {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 15px 10px 0;
+  cursor: pointer;
+}
+
+.comment-icon {
+  width: 23px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 15px 10px 0;
+  cursor: pointer;
+}
+
+.share-icon {
+  width: 23px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 0 10px 0;
+  cursor: pointer;
+}
+
+.save-icon {
+  width: 20px;
+  height: auto;
+  object-fit: contain;
+  margin: 5px 0 5px 5px;
+  cursor: pointer;
+}
+
+.like-count-div {
+  margin: 0;
+}
+
+.like-count {
+  margin: 3px 0 3px 0;
+}
+
+.description-div {
+  display: flex;
+  color: rgb(245, 245, 245);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 10px 0 0 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.link-to-profile {
+  font-weight: 700;
+}
+
+.read-more {
+  display: block;
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  font-weight: 300;
+}
+
+.content-info {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.more-text {
+  display: none;
+}
+
+.dots {
+  display: inline;
+}
+
+.page-info-and-account-info {
+  width: 319px;
+  position: absolute;
+  right: 100px;
+}
+
+.my-account-pic {
+  height: 56px;
+  border-radius: 50%;
+}
+
+.my-account-pic-div {
+  display: flex;
+  align-items: center;
+}
+
+.account-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 0 0 15px; 
+}
+
+.my-account {
+  display: flex;
+}
+
+.account-username {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.5px 0;
+  padding: 0;
+  color: rgb(245, 245, 245);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.account-name {
+  margin: 0.5px 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: rgb(168, 168, 168);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.switch-button {
+  color: rgb(0, 149, 246);
+  background-color: transparent;
+  border: none;
+  font-size: 11.5px;
+  font-weight: 500;
+  font-family: Roboto, Arial;
+  height: 16px;
+  width: 35.46px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.button-div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-pics {
+  border-radius: 50%;
+  height: 65px;
+  margin: 0 10px 5px 10px;
+}
+
+.stories {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+
+.story-names {
+  font-size: 11.4px;
+  font-weight: 400;
+  max-width: 70px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.story-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }

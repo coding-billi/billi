@@ -1,0 +1,21 @@
+        <div class="page-info-and-account-info">
+					<div class="my-account">
+						<div class="my-account-pic-div">
+							<img class="my-account-pic" src="/pictures/instagram/my-profile-icon.jpg">
+						</div>
+						<div class="account-info-div">
+							<p class="account-username">assassin_billi</p>
+							<p class="account-name">billi</p>
+						</div>
+						<div class="button-div">
+							<button class="switch-button">Switch</button>
+						</div>
+					</div>
+					<div class="suggested-accounts">
+						<div class="account1"></div>
+						<div class="account2"></div>
+						<div class="account3"></div>
+						<div class="account4"></div>
+						<div class="account5"></div>
+					</div>
+				</div>

@@ -1,0 +1,32 @@
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+}
+
+.heart-icon {
+  background-image: url('/pictures/heart-icon-dark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.heart-icon.liked {
+  animation: heartBeat 0.5s;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
