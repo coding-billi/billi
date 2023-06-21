@@ -210,3 +210,28 @@ image10.addEventListener('click', handleClick10);
 
 // Call the handleClick function initially to change the image on page load
 handleClick10();
+
+
+
+
+
+
+
+
+
+
+//this is for input and comment section first time using jquery
+$(document).ready(function() {
+  const textarea = $('.write-comment-input');
+  textarea.on('input', function() {
+    this.style.height = '18px'; // Reset height to initial value
+
+    // Calculate the scroll height
+    const scrollHeight = this.scrollHeight;
+
+    // Set the height of the textarea based on the scroll height
+    if (scrollHeight > 18) {
+      this.style.height = scrollHeight + 'px';
+    }
+  });
+});
