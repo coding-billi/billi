@@ -194,7 +194,6 @@ handleClick9();
 
 
 
-
 const image10 = document.querySelector('.save-icon');
 const images10 = ['/pictures/instagram/save-icon-clicked.png', '/pictures/instagram/save-icon.png']; // Array of image URLs
 let currentIndex10 = 0;
