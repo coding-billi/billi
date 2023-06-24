@@ -1,0 +1,199 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-bottom: 150px;
+  transition: all 0.3s;
+}
+
+.navbar {
+  border: solid rgba(0, 22, 22, 0.4);
+  border-width: 0 3px 0 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(77, 78, 83);
+}
+
+.navbar-header {
+  border: solid rgba(0, 22, 22, 0.4);
+  border-width: 0 0 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 15px 30px;
+}
+
+.navbar-heading {
+  font-size: 28.8px;
+  color: black;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 43.2px;
+}
+
+.items-div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.unique-item {
+  border: none;
+}
+
+.main {
+  margin-left: 295.32px;
+  padding: 0 50px 0 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  text-align: start;
+}
+
+.intro-section {
+  margin: 0 0 0 0;
+}
+
+.sections-para {
+  margin: 20px 0 0 50px;
+  line-height: 23.04px;
+}
+
+.intro-section-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 20px 60px;
+  padding: 0;
+}
+
+.sections-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28.8px;
+  font-weight: 500;
+  margin: 30px 0 0 30px;
+  padding: 0;
+}
+
+.ul-already-know-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 20px 0 20px 45px;
+  padding: 0;
+}
+
+.already-know-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 10px 50px;
+  padding: 0;
+}
+
+.ul-data-types-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 0 0px;
+}
+
+.ul-hollow-dots-list {
+  margin: 20px 0 20px 110px;
+}
+
+.data-types-list-item {
+  margin: 20px 0 0 80px;
+}
+
+.while-list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 20px 60px;
+  padding: 0;
+}
+
+.declaration-list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 20px 60px;
+  padding: 0;
+}
+
+.reference-list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.36px;
+  color: rgb(77, 78, 83);
+  line-height: 23.04px;
+  margin: 0 0 20px 60px;
+  padding: 0;
+}
+
+.code {
+  background-color: rgb(247, 247, 247);
+  color: rgb(77, 78, 83);
+  font-size: 12.48px;
+  margin: 10px 10px 10px 70px;
+  padding: 15px;
+  text-align: left;
+  font-family: monospace;
+  white-space: pre-line;
+  word-break: break-all;
+  display: block;
+  line-height: 23.04px;
+}
+
+.a {
+  text-decoration: none;
+  color: rgb(77, 78, 83);
+  transition: all 0.3s;
+  padding: 12px 0 12px 20px;
+  display: flex;
+  border: solid rgba(0, 22, 22, 0.4);
+  border-width: 0 0 2px 0;
+  font-size: 17px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.unique-anchor-tag {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Add the following media queries */
+
+@media screen and (max-width: 815px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 277px;
+    overflow-y: scroll;
+    border-width: 1px 0.5px 1px 0;
+    border: solid rgb(84, 84, 84);
+  }
+
+  .main {
+    margin-top: 300px;
+    margin-left: 0;
+  }
+  
+}

@@ -395,7 +395,7 @@ body {
 
 .story-pics {
   border-radius: 50%;
-  height: 65px;
+  height: 58px;
 }
 
 .story-names {
@@ -419,7 +419,6 @@ body {
   height: auto;
   border: solid rgb(38, 38, 38);
   border-width: 0 0 1px 0;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -431,6 +430,7 @@ body {
   height: 56px;
   align-items: center;
   display: flex;
+  padding: 0 0 5px 0;
 }
 
 .profile-pic-div {
@@ -447,7 +447,7 @@ body {
 }
 
 .profile-info-div {
-  padding: 0 3px 0 10px;
+  padding: 0 3px 0px 10px;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -558,7 +558,7 @@ body {
   cursor: pointer;
 }
 
-.heartcon:hover {
+.heart-icon:hover {
   opacity: 0.6;
 }
 
