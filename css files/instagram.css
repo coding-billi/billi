@@ -40,6 +40,11 @@ body {
   cursor: pointer;
 }
 
+.insta-logo-collapsed {
+  height: 22px;
+  cursor: pointer;
+}
+
 
 
 
@@ -684,4 +689,58 @@ body {
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, Arial;
+}
+
+
+
+@media screen and (max-width: 1160px) {
+  .page-info-and-account-info {
+    display: none;
+  }
+}
+
+@media (max-width: 1260px) {
+  .navbar .items label {
+    display: none;
+    transition: display 0.15s ease;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .navbar .items1 label {
+    display: none;
+  }
+
+  .navbar {
+    width: 59px;
+  }
+
+  .main {
+    margin-left: 72px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1260px) {
+  .insta-logo {
+    display: none;
+  }
+
+  .insta-logo-collapsed {
+    display: inline;
+  }
+
+}
+
+@media screen and (min-width: 1260px) {
+  .insta-logo {
+    display: inline;
+  }
+
+  .insta-logo-collapsed {
+    display: none;
+  }
 }
