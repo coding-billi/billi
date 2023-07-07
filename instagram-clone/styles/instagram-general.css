@@ -1,0 +1,282 @@
+
+
+
+/*the media queries are in the instagram-general.css file*/
+/*the media queries are in the instagram-general.css file*/
+/*the media queries are in the instagram-general.css file*/
+
+
+
+body {
+  background-color: black;
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  color: rgb(250, 250, 250);
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 245px;
+}
+
+.insta {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  margin-top: 48px;
+  margin-left: 64px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; 
+}
+
+/*below is the media queries all of them*/  /*the media queries are in the instagram-general.css file*/
+
+@media screen and (max-width: 1160px) {
+  .page-info-and-account-info {
+    display: none;
+  }
+
+  .top-navbar {
+    display: none;
+  }
+
+  .bottom-navbar {
+    display: none;
+  }
+
+  .section {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  .top-navbar {
+    display: none;
+  }
+
+  .bottom-navbar {
+    display: none;
+  }
+
+  .navbar .items label {
+    display: none;
+    transition: display 0.15s ease;
+  }
+
+  .navbar .items1 label {
+    display: none;
+  }
+
+  .navbar {
+    width: 59px;
+  }
+
+  .main {
+    margin-left: 72px;
+  }
+
+  .insta-logo {
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .insta-logo-collapsed {
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .insta-logo-collapsed:hover {
+    transition: all 0.15s;
+  }
+
+  .brand {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    border-radius: 8px;
+  }
+
+  .brand:hover {
+    background-color: #ffffff1a;
+  }
+
+  .brand:hover img {
+    transform: scale(1.07);
+  }
+
+  .brand:active img {
+    transform: scale(0.97);
+    opacity: 0.5;
+  }
+
+  .top-section {
+    margin: 0;
+    padding: 7px 0px 22px 2px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .insta-logo {
+    display: inline;
+    transition: opacity 0.5s ease;
+  }
+
+  .insta-logo-collapsed {
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  .section {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: solid 1px rgb(45, 45, 45);
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+  }
+
+  .brand {
+    padding: 3px 10px 0 10px;
+  }
+
+  .right-section-top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .search-input-container {
+    position: relative;
+  }
+
+  .search-icon-input {
+    width: 18px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+  }
+
+  .search-input {
+    margin: 0 20px 0 0;
+    height: 36px;
+    width: 270px;
+    border-radius: 8px;
+    background-color: rgb(38, 38, 38);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px 16px 3px 36px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    font-family: Roboto, Arial;
+  }
+
+  .search-input::placeholder {
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+    font-family: Roboto, Arial;
+    font-weight: 300;
+  }
+
+  .notifications-icon {
+    margin: 0 17px 0 0;
+  }
+
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-grow: 1;
+    border: solid rgb(54, 54, 54);
+    border-width: 1px 0 0 0;
+    z-index: 1;
+    display: block;
+    background-color: black;
+  }
+
+  .content {
+    margin-bottom: 48px;
+  }
+
+  .inner-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .bottom-nav-icons {
+    padding: 12px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .my-profile-icon {
+    border-radius: 50%;
+  }
+
+  .insta-logo {
+    height: 29px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+}

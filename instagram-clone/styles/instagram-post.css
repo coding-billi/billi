@@ -1,0 +1,297 @@
+
+
+
+/*the media queries are in the instagram-general.css file*/
+/*the media queries are in the instagram-general.css file*/
+/*the media queries are in the instagram-general.css file*/
+
+
+
+.post {
+  margin-top: 10px;
+  width: 470px;
+  height: auto;
+  border: solid rgb(38, 38, 38);
+  border-width: 0 0 1px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.top-section-post {
+  height: auto;
+  align-items: center;
+  display: flex;
+  padding: 10px 0 10px 0;
+  
+}
+
+.profile-pic-div {
+  display: flex;
+  height: 100%;
+  width: 30px;
+  align-items: center;
+  padding: 0 3px 0 3px;
+}
+
+.post-pic1 {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-info-div {
+  padding: 0 3px 0px 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.profile-name {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.profile-name-span {
+  cursor: pointer;
+}
+
+.profile-name-span:hover {
+  opacity: 0.6;
+}
+
+.verified-icon {
+  height: 11px;
+  margin-left: 4px;
+}
+
+.time-post {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.time-post::before {
+  content: "\00B7";
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+.further-info {
+  margin: 0;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 12px
+}
+
+.options-div {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.options-icon {
+  height: 15px;
+  cursor: pointer;
+}
+
+.options-icon:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+.middle-section-post {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-post {
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px rgb(38, 38, 38);
+}
+
+
+
+
+.lower-section-post {
+  font-family: Roboto, Arial;
+}
+
+.buttons-div {
+  display: flex;
+}
+
+.left-buttons {
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.heart-icon {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 15px 10px 0;
+  cursor: pointer;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-icon {
+  transition: transform 1s ease-in-out;
+}
+
+.heart-icon.animate {
+  animation: heartbeat 0.3s;
+}
+
+.opacity-class-js:hover {
+  opacity: 0.6;
+}
+
+.comment-icon {
+  width: 23px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 15px 10px 0;
+  cursor: pointer;
+}
+
+.comment-icon:hover {
+  opacity: 0.6;
+}
+
+.share-icon {
+  width: 23px;
+  height: auto;
+  object-fit: contain;
+  margin: 14px 0 10px 0;
+  cursor: pointer;
+}
+
+.share-icon:hover {
+  opacity: 0.6;
+}
+
+.right-buttons {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.save-icon {
+  width: 20px;
+  height: auto;
+  object-fit: contain;
+  margin: 5px 0 5px 5px;
+  cursor: pointer;
+}
+
+.like-count-div {
+  margin: 0;
+}
+
+.like-count {
+  margin: 3px 0 3px 0;
+}
+
+.content-info {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.description-div {
+  display: flex;
+  color: rgb(245, 245, 245);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 10px 0 0 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.link-to-profile {
+  font-weight: 700;
+}
+
+.more-text {
+  display: none;
+}
+
+.dots {
+  display: inline;
+}
+
+.read-more {
+  display: block;
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  font-weight: 300;
+  margin: 0 0 4px 0;
+}
+
+.view-comment {
+  color: rgb(168, 168, 168);
+  font-size: 13.3px;
+  font-weight: 300;
+  cursor: pointer;
+  margin: 4px 0 4px 0;
+}
+
+.write-comment-input {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 18px;
+  width: 100%;
+  font-family: Roboto, Arial;
+  resize: none;
+  margin: 4px 0 15px 0;
+  padding: 0;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+.write-comment-input::placeholder {
+  color: rgb(168, 168, 168);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, Arial;
+}
+

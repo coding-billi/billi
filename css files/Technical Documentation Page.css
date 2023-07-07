@@ -195,5 +195,16 @@ p {
     margin-top: 300px;
     margin-left: 0;
   }
-  
+
+  .navbar-header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+  }
+
+  .items-div {
+    margin-top: 5px;
+  }
 }

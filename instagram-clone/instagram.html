@@ -11,52 +11,71 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-		<!--jQuery below-->
-		<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-
+		
 		<!--css file link below-->
-		<link rel="stylesheet" href="/css files/instagram.css">
-
+		<link rel="stylesheet" href="/instagram-clone/styles/instagram-navbar.css">
+		<link rel="stylesheet" href="/instagram-clone/styles/instagram-general.css">
+		<link rel="stylesheet" href="/instagram-clone/styles/instagram-post.css">
+		<link rel="stylesheet" href="/instagram-clone/styles/instagram-stories-page-info.css">
+		
 	</head>
 	<body>
+		<nav class="top-navbar">
+      <div class="left-section-top-nav">
+        <a href="#">
+					<div class="brand">
+						<img class="insta-logo" src="/pictures/instagram/instagram-logo.png" alt="">
+					</div>
+				</a>
+      </div>
+      <div class="right-section-top-nav">
+				<div class="search-input-container">
+					<img class="search-icon-input" src="/pictures/instagram/input-search-icon.png" alt="">
+					<input placeholder="Search" type="search" class="search-input">
+				</div>
+        <img class="notifications-icon button" src="/pictures/instagram/heart-icon.png" alt="">
+      </div>
+    </nav>
+		
+		
 		<nav class="navbar">
-
+			
 			<div class="top-section">
-				<div class="brand">
-					<a href="#">
+				<a href="#">
+					<div class="brand">
 						<img class="insta-logo" src="/pictures/instagram/instagram-logo.png" alt="">
 						<img class="insta-logo-collapsed" src="/pictures/instagram/instagram-logo-collapsed.png" alt="">
-					</a>
-				</div>
+					</div>
+				</a>
 			</div>
 
 			<div class="middle-section">
 				<div class="items">
-					<img id="home" class="home-icon side-icons" src="/pictures/instagram/Home-icon.png" alt="">
+					<img id="home" class="home-icon side-icons button" src="/pictures/instagram/Home-icon.png" alt="">
 					<label for="home">Home</label>
 				</div>
 				<div class="items">
-					<img id="search" class="search-icon side-icons" src="/pictures/instagram/search-icon.png" alt="">
+					<img id="search" class="search-icon side-icons button" src="/pictures/instagram/search-icon.png" alt="">
 					<label for="search">Search</label>
 				</div>
 				<div class="items">
-					<img id="explore" class="explore-icon side-icons" src="/pictures/instagram/explore-icon.png" alt="">
+					<img id="explore" class="explore-icon side-icons button" src="/pictures/instagram/explore-icon.png" alt="">
 					<label for="explore">Explore</label>
 				</div>
 				<div class="items">
-					<img id="reels" class="reels-icon side-icons" src="/pictures/instagram/reels-icon.png" alt="">
+					<img id="reels" class="reels-icon side-icons button" src="/pictures/instagram/reels-icon.png" alt="">
 					<label for="reels">Reels</label>
 				</div>
 				<div class="items">
-					<img id="messages" class="messages-icon side-icons" src="/pictures/instagram/messages-icon.png" alt="">
+					<img id="messages" class="messages-icon side-icons button" src="/pictures/instagram/messages-icon.png" alt="">
 					<label for="messages">Messages</label>
 				</div>
 				<div class="items">
-					<img id="notifications" class="notifications-icon side-icons" src="/pictures/instagram/heart-icon.png" alt="">
+					<img id="notifications" class="notifications-icon side-icons button" src="/pictures/instagram/heart-icon.png" alt="">
 					<label for="notifications">Notifications</label>
 				</div>
 				<div class="items">
-					<img id="create" class="create-icon side-icons" src="/pictures/instagram/create-icon.png" alt="">
+					<img id="create" class="create-icon side-icons button" src="/pictures/instagram/create-icon.png" alt="">
 					<label for="create">Create</label>
 				</div>
 				<div class="items">
@@ -64,33 +83,49 @@
 					<label for="my-profile">Profile</label>
 				</div>
 			</div>
-
+			
 			<div class="lower-section">
 				<div class="items1">
-					<img id="more" class="more-icon" src="/pictures/instagram/more-icon.png" alt="">
+					<img id="more" class="more-icon button" src="/pictures/instagram/more-icon.png" alt="">
 					<label for="more">More</label>
 				</div>
 			</div>
-
+			
 		</nav>
-
+		
+		<nav class="bottom-navbar">
+			<div class="inner-section">
+				<img id="home" class="home-icon bottom-nav-icons" src="/pictures/instagram/Home-icon.png" alt="">
+				
+        <img id="explore" class="explore-icon bottom-nav-icons" src="/pictures/instagram/explore-icon.png" alt="">
+				
+        <img id="reels" class="reels-icon bottom-nav-icons" src="/pictures/instagram/reels-icon.png" alt="">
+				
+        <img id="create" class="create-icon bottom-nav-icons" src="/pictures/instagram/create-icon.png" alt="">
+				
+        <img id="messages" class="messages-icon bottom-nav-icons" src="/pictures/instagram/messages-icon.png" alt="">
+				
+        <img id="my-profile" class="my-profile-icon bottom-nav-icons" src="/pictures/instagram/my-profile-icon.jpg" alt="">
+      </div>
+    </nav>
+		
 		<main class="main">
-
+			
 			<div class="insta">
-
+				
 				<div class="content">
-
+					
 					<div class="stories">
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/abdullah.jpg" alt="">
 							<p class="story-names">_abdullahuh</p>
 						</div>
-	
+						
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/agha.jpg" alt="">
 							<p class="story-names">aghahasnainn</p>
 						</div>
-	
+						
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/alex-costa.jpg" alt="">
 							<p class="story-names">alexcosta</p>
@@ -105,17 +140,17 @@
 							<img class="story-pics" src="/pictures/instagram/profile-icons/ghori.jpg" alt="">
 							<p class="story-names">ghori.xox</p>
 						</div>
-	
+						
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/hadi.jpg" alt="">
 							<p class="story-names">hadi_khan_6386</p>
 						</div>
-	
+						
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/mbappe.jpg" alt="">
 							<p class="story-names">k.mbappe</p>
 						</div>
-	
+						
 						<div class="story-div">
 							<img class="story-pics" src="/pictures/instagram/profile-icons/saib.jpg" alt="">
 							<p class="story-names">itx_saib_</p>
@@ -124,11 +159,11 @@
 					<div class="post">
 	
 						<div class="top-section-post">
-	
+							
 							<div class="profile-pic-div">
 								<img id="post-pic1" class="post-pic1" src="/pictures/instagram/profile-icons/ferrari-logo.jpg" alt="">
 							</div>
-	
+							
 							<div class="profile-info-div">
 								<p class="profile-name">
 									<span class="profile-name-span">ferrari</span>
@@ -141,35 +176,35 @@
 									Le Mans
 								</p>
 							</div>
-	
+							
 							<div class="options-div">
 								<img class="options-icon" src="/pictures/instagram/options.png" alt="">
 							</div>
-	
+							
 						</div>
-	
+						
 						<div class="middle-section-post">
 							<img class="main-post" src="/pictures/instagram/posts/352430909_1576034312807636_3648756959164042433_n.jpg" alt="">
 						</div>
-	
+						
 						<div class="lower-section-post">
 							<div class="buttons-div">
 								<div class="left-buttons">
-									<img class="heart-icon" src="/pictures/instagram/heart-icon.png" alt="">
-	
+									<img class="heart-icon opacity-class-js" src="/pictures/instagram/heart-icon.png" alt="">
+									
 									<img class="comment-icon" src="/pictures/instagram/comment-icon.png" alt="">
-	
+									
 									<img class="share-icon" src="/pictures/instagram/share-icon.png" alt="">
 								</div>
 								<div class="right-buttons">
-									<img class="save-icon" src="/pictures/instagram/save-icon.png" alt="">
+									<img class="save-icon opacity-class-js" src="/pictures/instagram/save-icon.png" alt="">
 								</div>
 							</div>
-	
+							
 							<div class="like-count-div">
 								<p class="like-count">80,662 likes</p>
 							</div>
-	
+							
 							<div class="content-info">
 								<div class="description-div">
 									<p class="description">
@@ -189,26 +224,26 @@
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="post">
-	
+						
 						<div class="top-section-post">
-	
+							
 							<div class="profile-pic-div">
 								<img id="post-pic1" class="post-pic1" src="/pictures/instagram/profile-icons/bughatti-company-logo.jpg" alt="">
 							</div>
-	
+							
 							<div class="profile-info-div">
 								<p class="profile-name">
 									<span class="profile-name-span">bugatti_company</span>
 									<span class="time-post">1h</span>
 								</p>
 							</div>
-	
+							
 							<div class="options-div">
 								<img class="options-icon" src="/pictures/instagram/options.png" alt="">
 							</div>
-	
+							
 						</div>
 	
 						<div class="middle-section-post">
@@ -218,21 +253,21 @@
 						<div class="lower-section-post">
 							<div class="buttons-div">
 								<div class="left-buttons">
-									<img class="heart-icon2 heart-icon" src="/pictures/instagram/heart-icon.png" alt="">
-	
+									<img class="heart-icon2 heart-icon opacity-class-js" src="/pictures/instagram/heart-icon.png" alt="">
+									
 									<img class="comment-icon" src="/pictures/instagram/comment-icon.png" alt="">
-	
+									
 									<img class="share-icon" src="/pictures/instagram/share-icon.png" alt="">
 								</div>
 								<div class="right-buttons">
-									<img class="save-icon2 save-icon" src="/pictures/instagram/save-icon.png" alt="">
+									<img class="save-icon2 save-icon opacity-class-js" src="/pictures/instagram/save-icon.png" alt="">
 								</div>
 							</div>
-	
+							
 							<div class="like-count-div">
 								<p class="like-count">4,087 likes</p>
 							</div>
-	
+							
 							<div class="content-info">
 								<div class="description-div">
 									<p class="description">
@@ -252,7 +287,7 @@
 							</div>
 						</div>
 					</div>
-
+					
 				</div>
 
 				<div class="section">
@@ -274,7 +309,7 @@
 							<button class="see-all-button">See All</button>
 						</div>
 						<div class="suggested-accounts">
-	
+							
 							<div class="account1">
 								<div class="account1-pic-div">
 									<img class="account1-pic" src="/pictures/instagram/profile-icons/saib_priv.jpg" alt="">
@@ -287,7 +322,7 @@
 									<button class="follow-button">Follow</button>
 								</div>
 							</div>
-	
+							
 							<div class="account2 account1">
 								<div class="account2-pic-div account1-pic-div">
 									<img class="account2-pic account1-pic" src="/pictures/instagram/profile-icons/shelby.jpg" alt="">
@@ -300,7 +335,7 @@
 									<button class="follow-button">Follow</button>
 								</div>
 							</div>
-	
+							
 							<div class="account3 account1">
 								<div class="account3-pic-div account1-pic-div">
 									<img class="account3-pic account1-pic" src="/pictures/instagram/profile-icons/Sir-riaz.jpg" alt="">
@@ -339,14 +374,16 @@
 									<button class="follow-button">Follow</button>
 								</div>
 							</div>
-	
+							
 						</div>
 					</div>
 				</div>
 				
 			</div>
-
+			
 		</main>
 	</body>
-	<script src="/javascript files/instagram.js"></script>
-</html>
+	<script src="/instagram-clone/instagram.js"></script>
+	<!--jQuery below-->
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	</html>
