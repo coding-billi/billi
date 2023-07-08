@@ -1,75 +1,48 @@
-:root {
-  --hover-color: #000;
-}
-
 .container {
+  display: flex;
   width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  border: 1px solid #000;
+  height: 500px;
+  flex-direction: column;
+  border: solid 1px rgb(116, 116, 116);
 }
 
-.container > div {
-  background-color: #fff;
-}
-
-h1 {
-  text-align: center;
-}
-
-.cell {
-  border: rgba(0, 0, 0, 0.085) solid;
-  border-width: 1px;
-}
-
-.cell:hover {
-  background-color: var(--hover-color);
-}
-
-body {
-  font-family: Roboto, Arial;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-button {
-  height: 40px;
-  width: 150px;
-  margin: 20px;
-  font-size: 1rem;
-  font-family: Roboto, Arial;
-  font-weight: 500;
-  border: none;
-  background-color: rgb(249, 143, 12);
-  border-radius: 10px;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-button:hover {
-  transform: scale(1.1);
-  opacity: 0.85;
-}
-
-button:active {
-  transform: scale(0.98);
-  opacity: 0.6;
-}
-
-.rangeInput {
-  width: 200px;
+.display-screen {
+  display: flex;
+  flex-grow: 1;
+  font-size: 30px;
+  align-items: end;
+  justify-content: end;
   padding: 20px;
+  font-family: monospace;
 }
 
-.colorInput {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: none;
-  padding: 20px;
-}
-
-.grid-div {
+.all-buttons {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.buttons {
+  height: 60px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+  border-radius: 8px;
+  margin: 1px;
+  background-color: rgb(242, 242, 242);
+}
+
+.buttons:hover {
+  transform: scale(1.08);
+  background-color: rgb(211, 211, 211);
+}
+
+.buttons:active {
+  transform: scale(0.98);
+  background-color: rgb(190, 190, 190);
 }

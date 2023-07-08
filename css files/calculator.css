@@ -1,60 +1,48 @@
-*, *::before, *::after {
-box-sizing: border-box;
-font-family: Gotham Rounded, sans-serif;
-font-weight: normal;
-}
-
-body {
-margin: 0;
-padding: 0;
-background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
-}
-
-.calculator-grid {
-display: grid;
-justify-content: center;
-align-content: center;
-min-height: 100vh;
-grid-template-columns: repeat(4, 100px);
-grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-}
-
-.calculator-grid > button {
-cursor: pointer;
-font-size: 2rem;
-border: 1px, solid #FFFFFF;
-outline: none;
-background-color: rbga(255, 255, 255, 0.75);
-}
-
-.calculator-grid > button:hover {
-    background-color: #a9a9a9;
-}
-
-.span-two {
-    grid-column: span 2;
-    color: #adf802;
-    background-color: rgba(139, 0, 139, 0.8);
-}
-
-.output {
-    grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.75);
+.container {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    width: 400px;
+    height: 500px;
     flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-.output .previous-operand {
-    color: rgba(255,255, 255, 0.75);
-    font-size: 1.5rem;
-}
-
-.output .current-operand {
-    color: white;
-    font-size: 2.5rem;
-}
+    border: solid 1px rgb(116, 116, 116);
+  }
+  
+  .display-screen {
+    display: flex;
+    flex-grow: 1;
+    font-size: 30px;
+    align-items: end;
+    justify-content: end;
+    padding: 20px;
+    font-family: monospace;
+  }
+  
+  .all-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .buttons {
+    height: 60px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: monospace;
+    cursor: pointer;
+    transition: all 0.3s;
+    user-select: none;
+    border-radius: 8px;
+    margin: 1px;
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .buttons:hover {
+    transform: scale(1.08);
+    background-color: rgb(211, 211, 211);
+  }
+  
+  .buttons:active {
+    transform: scale(0.98);
+    background-color: rgb(190, 190, 190);
+  }

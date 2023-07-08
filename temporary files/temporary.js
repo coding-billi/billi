@@ -1,154 +1,150 @@
 // $(document).ready(() => {
-//   $('h1').click(() => {
-//     $('p').hide();
+//   let one = 1;
+//   $('.one').on('click', () => {
+//     $('.display-screen').append(one);
+//   });
+
+//   let two = 2;
+//   $('.two').on('click', () => {
+//     $('.display-screen').append(two);
+//   });
+
+//   let three = 3;
+//   $('.three').on('click', () => {
+//     $('.display-screen').append(three);
+//   });
+
+//   let four = 4;
+//   $('.four').on('click', () => {
+//     $('.display-screen').append(four);
+//   });
+
+//   let five = 5;
+//   $('.five').on('click', () => {
+//     $('.display-screen').append(five);
+//   });
+
+//   let six = 6;
+//   $('.six').on('click', () => {
+//     $('.display-screen').append(six);
+//   });
+
+//   let seven = 7;
+//   $('.seven').on('click', () => {
+//     $('.display-screen').append(seven);
+//   });
+
+//   let eight = 8;
+//   $('.eight').on('click', () => {
+//     $('.display-screen').append(eight);
+//   });
+
+//   let nine = 9;
+//   $('.nine').on('click', () => {
+//     $('.display-screen').append(nine);
+//   });
+
+//   let zero = 0;
+//   $('.zero').on('click', () => {
+//     $('.display-screen').append(zero);
+//   });
+
+//   let minus = '-';
+//   $('.minus').on('click', () => {
+//     $('.display-screen').append(minus);
+//   });
+
+//   let add = '+';
+//   $('.add').on('click', () => {
+//     $('.display-screen').append(add);
+//   });
+
+//   let multiply = 'x';
+//   $('.multiply').on('click', () => {
+//     $('.display-screen').append(multiply);
+//   });
+
+//   let divide = '/';
+//   $('.divide').on('click', () => {
+//     $('.display-screen').append(divide);
+//   });
+
+//   let equals = '=';
+//   $('.equals').on('click', () => {
+//     $('.display-screen').append(equals);
+//   });
+
+//   $('.clear-button').on('click', () => {
+//     $('.display-screen').empty();
+//   });
+
+  
+// });
+
+
+
+
+// $(document).ready(() => {
+//   let currentNumber = ''; // Variable to store the current number
+
+//   $('.buttons').on('click', function() {
+//     const digit = $(this).text();
+//     if (digit === '=') {
+//       $('.display-screen').append('=');
+//       console.log('Current number:', currentNumber); // Perform calculations with the saved number
+//       currentNumber = ''; // Reset the current number for the next calculation
+//     } else if (digit === 'AC') {
+//       $('.display-screen').empty();
+//       currentNumber = ''; // Reset the current number
+//     } else {
+//       $('.display-screen').append(digit);
+//       currentNumber += digit; // Append the digit to the current number
+//     }
 //   });
 // });
 
-// $(function() {
-//   $('h1').click(()=> {
-//     $('p').fadeToggle();
-//   })
-// })
 
 
+let currentNumber = ''; // Variable to store the current number
 
+$(document).ready(() => {
+  $('.buttons').on('click', function() {
+    const input = $(this).text();
 
-
-
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const container = document.querySelector(".container");
-
-//   function createGrid(size) {
-//     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-//     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-
-//     for (let i = 0; i < size size * size i++) {
-//       const cell = $(`<div></div>`);div");
-//       container.appendChild(gridCelcontainer.appendChild(cell);l);
-//     }
-//   }
-
-//   function clearGrid() {
-//     const gridCells = container.querySelectorAll("div");
-//     gridCells.forEach(cell => {
-//       cell.style.backgroundColor = "#fff";
-//     });
-//   }
-
-//   function getRandomColor() {
-//     const letters = "size * size    let color = "#";
-//     for (let i = 0; i const cell = $(`<div></div>`);size    color += letters[Math.floor(const cell = $(`<dicontainer.appendChild(cell);v></div>`);
-//     }container.appendChild(cell);
-//     return color;
-//   }
-
-//   function changeColor() {
-//     this.style.backgroundColor = getRandomColor();
-//   }
-
-//   createGrid(16);
-
-//   const clearButton = document.createElement("button");
-//   clearButton.textContent = "Clear Grid";
-//   document.body.insertBefore(clearButton, container);
-//   clearButton.addEventListener("click", clearGrid);
-
-//   const colorButton = document.createElement("button");
-//   colorButton.textContent = "Random Color";
-//   document.body.insertBefore(colorButton, container);
-//   colorButton.addEventListener("click", () => {
-  //     const gridCells = container.querySelectorAll("div");
-  //     gridCells.forEach(cell => {
-    //       cell.addEventListener("mouseover", changeColor);
-    //     });
-    //   });
-    // });
-    
-
-
-$(document).ready(function () {
-  const container = $('.container');
-  let mousedown = false;
-  
-  const rangeInput = $('<input class="rangeInput" type="range" min="1" max="32" value="16">');
-  const rangeDisplay = $('<span></span>');
-  $('.control-panel').append(rangeInput, rangeDisplay);
-  let rangeInputValue = rangeInput.val();
-
-  rangeDisplay.text(`${rangeInputValue} x ${rangeInputValue}`);
-  
-  rangeInput.on('input', () => {
-    rangeInputValue = rangeInput.val();
-    createGrid(rangeInputValue);
-    rangeDisplay.text(`${rangeInputValue} x ${rangeInputValue}`);
-  });
-  
-  const input = $('<input class="colorInput" type="color">');
-  $('.control-panel').append(input);
-  let inputValue = input.val();
-  
-  input.on('input', function() {
-    inputValue = input.val();
-    $('body').css('--hover-color', inputValue);
-    hoverColor = inputValue; // Update the hoverColor variable
-  });
-
-  let hoverColor = inputValue;
-
-  function createGrid(size) {
-    container.css({
-      'grid-template-columns': `repeat(${size}, 1fr)`,
-      'grid-template-rows': `repeat(${size}, 1fr)`,
-      'display': 'grid'
-    });
-
-    container.empty(); // Clear existing cells
-
-    for (let i = 0; i < size * size; i++) {
-      const cell = $('<div class="cell"></div>');
-      container.append(cell);
+    if (input === '=') {
+      $('.display-screen').append('=');
+      calculateResult();
+      console.log(input);
+    } else if (input === 'AC') {
+      clearDisplay();
+      console.log(input);
+    } else if (isOperator(input)) {
+      handleOperator(input);
+      console.log(input);
+    } else {
+      $('.display-screen').append(input);
+      currentNumber += input;
+      console.log(currentNumber);
     }
-  }
-  
-  const clearButton = $('<button>Clear Canvas</button>');
-  $('.control-panel').append(clearButton);
-  clearButton.click(() => {
-    let afterClearDefaultInputValue = inputValue;
-    container.find('div').css('background-color', 'transparent');
-    inputValue = afterClearDefaultInputValue;
-  })
-  
-  const eraserButton = $('<button>Eraser</button>');
-  $('.control-panel').append(eraserButton);
-  eraserButton.click(() => {
-    inputValue = 'transparent';
-  })
-
-  const pencilButton = $('<button>Pencil</button>');
-  $('.control-panel').append(pencilButton);
-  pencilButton.click(() => {
-    inputValue = 'black';
-  })
-
-  createGrid(rangeInputValue);
-
-  container.on('mousedown', 'div', function() {
-    mousedown = true;
-    $(this).css('background-color', inputValue);
-  });
-
-  container.on('mouseover', 'div', function() {
-    if (mousedown) {
-      $(this).css('background-color', inputValue);
-    }
-  });
-
-  $(document).on('mouseup mouseleave', function() {
-    mousedown = false;
   });
 });
+
+function calculateResult() {
+  const result = eval(currentNumber);
+  currentNumber = String(result);
+  $('.display-screen').empty().append(currentNumber);
+}
+
+function clearDisplay() {
+  $('.display-screen').empty();
+  currentNumber = '';
+}
+
+function isOperator(input) {
+  return input === '+' || input === '-' || input === '×' || input === '÷';
+}
+
+function handleOperator(input) {
+  $('.display-screen').append(input);
+  currentNumber += input;
+}
